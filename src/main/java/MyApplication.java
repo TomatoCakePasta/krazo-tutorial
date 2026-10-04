@@ -12,6 +12,10 @@ public class MyApplication extends Application {
     public Set<Class<?>> getClasses() {
         Set<Class<?>> classes = new HashSet<>();
         classes.add(HelloController.class);
+        classes.add(MyWriterInterceptor.class);
+        classes.add(MyRequestFilter.class);
+        classes.add(MyResponseFilter.class);
+        classes.add(MyReaderInterceptor.class);
         return classes;
     }
 }
